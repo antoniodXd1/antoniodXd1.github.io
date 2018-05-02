@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
+    <style media="screen">
+      * {
+        font-family: 'Indie Flower', cursive;
+      }
+        .bar{
+          background-color: black;
+          color: white;
+        }
+        .barimg {
+          background-color: black;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row bar" style="padding: 5px">
+        <div class="col-2" align="left">
+          <img src="img/isaac.jpg" class="rounded-circle" width="70px" height="70px" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+          <br/>
+          <p>Click Photo!</p>
+        </div>
+        <div class="col-1">
+          <h2 style="font-size: 55px;">-Portafolio-</h2>
+        </div>
+      </div>
+      <br/>
+      <div class="row">
+        <div class="col-12">
+          <div class="collapse border border-primary" id="collapseExample" style="padding: 10px;">
+            <div class="card card-body">
+              <div class="row justify-content-between">
+              <div class="col-6">
+                <p><b>Nombre: Isaac Antonio Sabino Guerra</b></p>
+                <p><b>Edad: 22 años</b></p>
+                <p><b>Carrera: Diseño Digital, Área Animacion 3D</b></p>
+                <!-- aqui esta el boton -->
+                <button type="button" class="btn btn-outline-secondary" download>Descargar CV</button>
+              </div>
+              <div class="col-3">
+                <img src="img/isaac2.jpg" width="65%" height="75%">
+                <br/>
+                <b id="seemore" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"> ver mas sobre mi</b>
+
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Isaac Antonio Sabino Guerra</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="border border-primary">
+                          <b>Soy una persona autodidacta que le gusta, adquirir conocimientos nuevos,
+                          siempre doy lo mejor de mi.</b>
+                          <br/>
+                          <br/>
+                          <b>Experiencia: </b>
+                          <br/>
+                          <br/>
+                          <b> Operador de Router de corte</b>
+                           <br/>
+                                    Septiembre 2017 - marzo 2018
+                          Aplik mas signos - alce blanco
+                          <br/>
+                          <b>Actividades</b>
+
+                          <br/>
+                          cortar materiales en formas base al diseño realizado
+                          acomodar los materiales  en base al diseño proporcionado en maquinas multicam
+                          en las cuales se manda el archivo de una maquina desde el programa de EN ROUT 5
+                        </b>
+                        <br/>
+                        <br/>
+                          <b>Cajero</b></br>
+                             Marzo 2014  Hasta  Julio 2015
+                             <br/>
+                              Bodega Aurrera -  1° DE MAYO
+                              <br/>
+                              <b>Actividades</b>
+                              <br/>
+                              Atencion  al cliente y cobro de mercancía
+                              <br/>
+                              <br/>
+                          <b>Cursos: </b>
+                          <br/>
+                          <b>Adobe Photoshop CC - Online Plataforma Udemy   15,5 hrs
+                              <br/>
+                              Illustrator CC - Online plataforma Udemy       11 hrs
+                          </b>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            </div>
+          </div>
+          <!-- esto es mi menu de galeria -->
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Trabajos</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Galeria</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="photoshop.html">Photoshop</a>
+                <a class="dropdown-item" href="autocad.html">Autocad</a>
+                <a class="dropdown-item" href="maya.html">Maya</a>
+                <a class="dropdown-item" href="illustrator.html">Illustrator</a>
+                <a class="dropdown-item" href="cinema4d.html">Cinema 4D</a>
+                <div class="dropdown-divider"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- aqui termina mi menu de galeria -->
+      </div>
+      <br/>
+      <!-- estas son mis imagenes -->
+      <div class="content-all">
+          <div class="content-carrousel">
+              <figure><img src="img/nada.jpg"></figure>
+              <figure><img src="img/cinema4d.jpg"></figure>
+              <figure><img src="img/ilustrator.jpg"></figure>
+              <figure><img src="img/photoshop.jpg"></figure>
+              <figure><img src="img/maya.png"></figure>
+              <figure><img src="img/autocad.jpg"></figure>
+          </div>
+      </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/script_index.js"></script>
+  </body>
+</html>
